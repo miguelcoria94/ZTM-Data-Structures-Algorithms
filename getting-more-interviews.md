@@ -1,1 +1,1 @@
-<h1 style="text-align:center;"> GETTING MORE INTERVIEWS </h1>
+<h1 style="align:center;"> GETTING MORE INTERVIEWS </h1>
