@@ -19,3 +19,19 @@ const arrayWithOneNumber = [5] //where the target is 8
 const arrayWithOneNumberWT = [5] //where the target is the only number
 
 const arrayWithTwoNumbers = [1, 6] //where the target is the two num sums
+
+function twoSums(array, target) {
+    if (array.length === 0) {
+        return "the number is not in the list";
+    }
+    
+    if (array[0] === target) {
+        return "the number is here!!"
+    }
+
+    let currentHead = array[0]
+
+    while(currentHead + )
+}
+
+console.log(twoSums(arrayWithOneNumberWT, 5));
