@@ -25,13 +25,17 @@ function twoSums(array, target) {
         return "the number is not in the list";
     }
     
-    if (array[0] === target) {
+    if (array.length === 1 && array[0] === target) {
         return "the number is here!!"
     }
 
     let currentHead = array[0]
+    if (currentHead + array[1] === target) {
+        return "found the number"
+    }
 
-    for (let i = array[0]; i < array.length; i++){
+
+    for (let i = 1; i < array.length; i++){
         if (currentHead + i === target) {
             return "found the number"
         } else {
@@ -40,7 +44,6 @@ function twoSums(array, target) {
         }
     }
     return "the number was not found"
-
 }
 
-console.log(twoSums(arrayWithOneNumberWT, 5));
+console.log(twoSums(arrayWithOneNumber, 99));
