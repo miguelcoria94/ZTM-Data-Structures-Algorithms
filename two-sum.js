@@ -31,7 +31,16 @@ function twoSums(array, target) {
 
     let currentHead = array[0]
 
-    while(currentHead + )
+    for (let i = array[0]; i < array.length; i++){
+        if (currentHead + i === target) {
+            return "found the number"
+        } else {
+            array.shift()
+            return twoSums(array, target)
+        }
+    }
+    return "the number was not found"
+
 }
 
 console.log(twoSums(arrayWithOneNumberWT, 5));
